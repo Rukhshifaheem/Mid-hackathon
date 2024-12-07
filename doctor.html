@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patient List</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navber Section -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a id="logo" class="navbar-brand" href="#">VitalsBridge</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item me-3">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="#blogs"
+              >Blogs</a
+            >
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" aria-current="page" href="#patient-list"
+              >Patients Appointments</a
+            >
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" aria-current="page" href="#contact-section"
+              >Contact</a>
+          </li>
+        </ul>
+        <div class="ms-3">
+            <button
+              id="logoutButton"
+              class="btn"
+              type="submit">
+              Log out
+            </button>
+          </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Blogs Section -->
+  <div class="container mt-5" id="blogs">
+    <h2 class="text-center mb-4">Latest Blogs</h2>
+    <div class="row g-4">
+        <!-- Blog Post 1 -->
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm">
+                <img src="./image/blog1.jpg" class="card-img-top" alt="Blog Image 1">
+                <div class="card-body">
+                    <h5 class="card-title">Understanding Heart Health</h5>
+                    <p class="card-text">
+                        Heart health is vital for overall well-being. Learn tips and lifestyle changes to keep your heart strong and healthy.
+                    </p>
+                    <a href="#blog1Content" class="btn btn-primary read-more-btn" data-bs-toggle="collapse">Read More</a>
+                    <div class="collapse mt-3" id="blog1Content">
+                        <p>
+                            Maintaining heart health includes a balanced diet, regular exercise, and avoiding stress. 
+                            Additionally, staying hydrated and regular checkups with a healthcare provider are crucial.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm">
+                <img src="./image/blog2.jpg" class="card-img-top" alt="Blog Image 2">
+                <div class="card-body">
+                    <h5 class="card-title">Benefits of Regular Checkups</h5>
+                    <p class="card-text">
+                        Regular health checkups can help detect potential health issues early. Find out why scheduling routine visits is important.
+                    </p>
+                    <a href="#blog2Content" class="btn btn-primary read-more-btn" data-bs-toggle="collapse">Read More</a>
+                    <div class="collapse mt-3" id="blog2Content">
+                        <p>
+                            Regular checkups ensure you stay informed about your health. They can help in early detection of chronic illnesses 
+                            and offer a roadmap for preventative care tailored to your needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Patient List Section -->
+  <div class="container mt-5" id="patient-list">
+    <h2 class="text-center mb-4">Appointments</h2>
+    <div id="pat-list-row" class="row g-4">
+        <!-- Appointment Card 1 -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm">
+                <div class="patient-header card-header text-dark">
+                    <h5 class="mb-0">Ahmed Khan</h5>
+                </div>
+                <div class="card-body p-4">
+                    <p><strong>Email:</strong> ahmedkhan@example.com</p>
+                    <p><strong>Date:</strong> 15-12-2024</p>
+                    <p><strong>Department:</strong> Cardiology</p>
+                    <p><strong>Phone:</strong> +923001234567</p>
+                    <p><strong>Message:</strong> Please confirm the appointment time.</p>
+                    <a href="#" class="pat-btn btn btn-primary btn-sm">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Appointment Card 2 -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm">
+                <div class="patient-header card-header text-dark">
+                    <h5 class="mb-0">Fatima Ali</h5>
+                </div>
+                <div class="card-body p-4">
+                    <p><strong>Email:</strong> fatimaali@example.com</p>
+                    <p><strong>Date:</strong> 18-12-2024</p>
+                    <p><strong>Department:</strong> Dermatology</p>
+                    <p><strong>Phone:</strong> +923111223344</p>
+                    <p><strong>Message:</strong> Urgent consultation needed.</p>
+                    <a href="#" class="pat-btn btn btn-primary btn-sm">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Appointment Card 3 -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm">
+                <div class="patient-header card-header text-dark">
+                    <h5 class="mb-0">Usman Shah</h5>
+                </div>
+                <div class="card-body p-4">
+                    <p><strong>Email:</strong> usmanshah@example.com</p>
+                    <p><strong>Date:</strong> 12-12-2024</p>
+                    <p><strong>Department:</strong> Pediatrics</p>
+                    <p><strong>Phone:</strong> +923455667788</p>
+                    <p><strong>Message:</strong> Follow-up for the last checkup.</p>
+                    <a href="#" class="pat-btn btn btn-primary btn-sm">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Appointment Card 4 -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm">
+                <div class="patient-header card-header text-dark">
+                    <h5 class="mb-0">Saira Bibi</h5>
+                </div>
+                <div class="card-body p-4">
+                    <p><strong>Email:</strong> sairabibi@example.com</p>
+                    <p><strong>Date:</strong> 10-12-2024</p>
+                    <p><strong>Department:</strong> Neurology</p>
+                    <p><strong>Phone:</strong> +923338899990</p>
+                    <p><strong>Message:</strong> Need a consultation for migraine.</p>
+                    <a href="#" class="pat-btn btn btn-primary btn-sm">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Appointment Card 5 -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm">
+                <div class="patient-header card-header text-dark">
+                    <h5 class="mb-0">Zainab Noor</h5>
+                </div>
+                <div class="card-body p-4">
+                    <p><strong>Email:</strong> zainabnoor@example.com</p>
+                    <p><strong>Date:</strong> 20-12-2024</p>
+                    <p><strong>Department:</strong> Obstetrics & Gynecology</p>
+                    <p><strong>Phone:</strong> +923454321234</p>
+                    <p><strong>Message:</strong> Pregnancy checkup needed.</p>
+                    <a href="#" class="pat-btn btn btn-primary btn-sm">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Appointment Card 6 -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm">
+                <div class="patient-header card-header text-dark">
+                    <h5 class="mb-0">Bilal Ahmed</h5>
+                </div>
+                <div class="card-body p-4">
+                    <p><strong>Email:</strong> bilalahmed@example.com</p>
+                    <p><strong>Date:</strong> 24-12-2024</p>
+                    <p><strong>Department:</strong> Orthopedics</p>
+                    <p><strong>Phone:</strong> +923339876543</p>
+                    <p><strong>Message:</strong> Consultation required for knee pain.</p>
+                    <a href="#" class="pat-btn btn btn-primary btn-sm">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact section -->
+<div class="container-fluid map mt-4">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.8421514677587!2d67.0311283!3d24.8607345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e5e9c5d9b6f%3A0x5e0f0ec5fbc0bc2!2sClifton%20Plaza%2C%20Block%205%2C%20Karachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1696524567890!5m2!1sen!2s" 
+      width="100%" 
+      height="350" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+<section class="container py-5" id="contact-section">
+  <div class="row">
+    <!-- Address Section -->
+    <div class="col-md-4 px-5">
+      <h4>Contact Info</h4>
+      <p>
+        St-1 Shahrah-e-Firdousi, Block 3 Clifton, near South City Hospital
+        Karachi, Sindh 75600
+      </p>
+      <p><i class="fa fa-phone"></i>+92-123-4567890</p>
+      <p>
+        <i class="fa-regular fa-envelope"></i>
+        <a
+          class="text-dark text-decoration-none"
+          href="mailto:cardio@company.com"
+          >info@vitalbridge.com</a>
+      </p>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="col-md-5">
+      <h4>Frequently Asked Questions:</h4>
+      <p><strong>Q: Do I need an appointment?</strong></p>
+      <p>A: Walk-ins are welcome, but appointments are recommended.</p>
+      <p><strong>Q: Do you accept insurance?</strong></p>
+      <p>A: Yes, we accept all major insurance plans.</p>
+      <div class="d-grid col-6 me-auto">
+        <button class="btn btn-secondary" type="button">Button</button>
+      </div>
+    </div>
+
+    <!-- Timings Section -->
+    <div class="col-md-3">
+      <h4>Opening Hours</h4>
+      <ul class="list-unstyled">
+        <li>Monday - Friday <span class="ms-3">9:00 AM - 6:00 PM</span></li>
+        <li>Saturday <span class="ms-3">10:00 AM - 4:00 PM</span></li>
+        <li>Sunday <span class="ms-3">Closed</span></li>
+      </ul>
+
+      <!-- Social Media Links -->
+      <div class="social-media mt-3 d-flex align-items-center">
+        <a href="https://facebook.com" target="_blank" class="me-2">
+          <i class="fab fa-facebook-f" style="color: black"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="me-2">
+          <i class="fab fa-twitter" style="color: black"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="me-2">
+          <i class="fab fa-instagram" style="color: black"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <i class="fab fa-linkedin-in" style="color: black"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+  
+ <!-- Footer Section -->
+ <footer class="py-2">
+    <hr class="border-secondary" /> 
+      <div class="text-center">
+        <p class="">
+          &copy; 2024 Vital Bridge. All Rights Reserved. | 
+          Designed by <a href="#" class="text-dark text-decoration-none">Rukhshi Faheem</a>
+        </p>
+      </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Hide "Read More" button on click
+    document.querySelectorAll('.read-more-btn').forEach(button => {
+        button.addEventListener('click', function () {
+            this.style.display = 'none'; // Hide the button
+        });
+    });
+</script>
+<script type="module" src="./auth.js"></script>
+</body>
+</html>
